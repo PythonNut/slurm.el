@@ -32,13 +32,11 @@
 
 ;;; Code:
 
-;;;###autoload
 (defcustom slurm-script-directives-face 'slurm-script-directives
   "Face name to use for SBATCH directives in SLURM job submission scripts."
   :group 'slurm
   :type 'face)
 
-;;;###autoload
 (defface slurm-script-directives nil
   "Face to use for SBATCH directives in SLURM job submission scripts."
   :group 'slurm)

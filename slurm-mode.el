@@ -34,24 +34,20 @@
 
 ;; * Customizable variables
 
-;;;###autoload
 (defgroup slurm nil
   "Interacting with the SLURM jobs scheduling system."
   :group 'external)
 
-;;;###autoload
 (defcustom slurm-display-help t
   "If non-nil, slurm-mode should display an help message at the top of the screen."
   :group 'slurm
   :type 'boolean)
 
-;;;###autoload
 (defcustom slurm-filter-user-at-start t
   "If non-nil, the jobs list is filtered by user at start."
   :group 'slurm
   :type 'boolean)
 
-;;;###autoload
 (defcustom slurm-scancel-confirm t
   "If non-nil, ask for confirmation before cancelling a job."
   :group 'slurm
@@ -62,7 +58,6 @@
   (when (fboundp 'slurm-update-squeue-format)
     (slurm-update-squeue-format)))
 
-;;;###autoload
 (defcustom slurm-squeue-format
   '((jobid      9 right)
     (partition  9 left)
